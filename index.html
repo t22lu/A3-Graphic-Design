@@ -5,449 +5,459 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Website: Portfolio</title>
     <!-- Created by Tiffany Lu on November 25, 2024-->
-    
+
     <!--Google font embed-->
-    
+
     <!--Font for body text-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Concert+One&family=Exo:ital,wght@0,100..900;1,100..900&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-    
+
     <!--Font for headers-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Cantora+One&family=Concert+One&family=Exo:ital,wght@0,100..900;1,100..900&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <!--
+Code copied from: [https://www.w3schools.com/cssref/css3_pr_border-radius.php]
+Author: W3Schools
+Name: border-radius
+Description: Use of border radius in creating accents and elements to the background
+Date retrieved: December 9, 2024
+-->
+    <!--
+Code copied from: [https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-text-stroke]
+Author: MDN
+Name: -web-kit-text-stroke
+Description: CSS short hand of stroke colour for text
+Date retrieved: December 9, 2024
+-->
+    <!--
+Code copied from: [https://www.w3schools.com/css/css3_flexbox.asp]
+Author: W3Schools
+Name: CSS Flex-box
+Description: Used for positioning elements 
+Date retrieved: December 9, 2024
+-->
   </head>
-  
-  
+
+
   <style>
-    body{
+    body {
       margin: 0;
       font-family: "Cabin", sans-serif;
     }
-    
-  .graphic-design {
-    background-color: #fff9f1;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100vw;
-}
 
-.graphic-design .div {
-  background-color: #fff9f1;
-  overflow: hidden;
-  width: 100vw;
-  height: 8017px;
-  position: relative;
-}
-    /*header*/    
-  .header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #004759;
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
-    font-family: "Cantora One", sans-serif;
-}
-  .graphic-design .star-icon {
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    top: 14px;
-    left: 20px;
-  }
+    .graphic-design {
+      background-color: #fff9f1;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 100vw;
+    }
 
-  .name {
-    display: absolute;
-    align-items: center;
-    font-size: 24px;
-    color: white;
-    padding-left: 20px;
-    margin-right: auto;
-  } 
-    
-  .links {
-    display: flex;
-    gap: 20px;
-    padding-right: 60px;
-  }
+    .graphic-design .div {
+      background-color: #fff9f1;
+      overflow: hidden;
+      width: 100vw;
+      height: 8017px;
+      position: relative;
+    }
 
-  .links a {
-    font-family: "Cabin", sans-serif;
-    font-size: 18px;
-    color: white;
-    text-decoration: none;
-  }
+    /*header*/
+    .header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #004759;
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+      font-family: "Cantora One", sans-serif;
+    }
 
-  .links a:hover {
-    color: #fda959;
-  }
+    .graphic-design .star-icon {
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      top: 14px;
+      left: 20px;
+    }
 
+    .name {
+      display: absolute;
+      align-items: center;
+      font-size: 24px;
+      color: white;
+      padding-left: 20px;
+      margin-right: auto;
+    }
 
-.graphic-design .overlap {
-  position: absolute;
-  width: 1679px;
-  height: 2498px;
-  top: 0;
-  left: -150px;
-}
+    .links {
+      display: flex;
+      gap: 20px;
+      padding-right: 60px;
+    }
 
-.graphic-design .overlap-group {
-  position: absolute;
-  width: 1529px;
-  height: 805px;
-  top: 0;
-  left: 150px;
-}
+    .links a {
+      font-family: "Cabin", sans-serif;
+      font-size: 18px;
+      color: white;
+      text-decoration: none;
+    }
+
+    .links a:hover {
+      color: #fda959;
+    }
 
 
-.graphic-design .group {
-  position: absolute;
-  width: 1529px;
-  height: 683px;
-  top: 0;
-  left: 0;
-}
+ 
+
+    .graphic-design .overlap-group {
+      position: relative;
+      width: 100%;
+      height: 805px;
+      top: 0;
+      left: 150px;
+    }
 
 
-.graphic-design .rectangle {
-  position: absolute;
-  width: 1527px;
-  height: 613px;
-  top: 0;
-  left: 0;
-  background-color: #070d12;
-}
-
-.graphic-design .text-wrapper-4 {
-  position: absolute;
-  width: 1440px;
-  top: 271px;
-  left: 0;
-  font-family: "Cantora One", san-serif;
-  font-weight: 400;
-  font-size: 128px;
-  text-align: center;
-  color: #ffffff;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.graphic-design .text-wrapper-5 {
-  position: absolute;
-  width: 313px;
-  top: 638px;
-  left: 20px;
-  font-family: "Cantora One-Regular", Helvetica;
-  font-weight: 400;
-  color: #fda959;
-  font-size: 128px;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.graphic-design .star {
-  position: absolute;
-  width: 332px;
-  height: 332px;
-  top: 473px;
-  left: 1108px;
-}
-
-.graphic-design .frame-2 {
-  gap: 17px;
-  top: 20px;
-  left: 797px;
-  display: inline-flex;
-  align-items: center;
-  position: absolute;
-}
+    .graphic-design .group {
+      position: absolute;
+      width: 1529px;
+      height: 683px;
+      top: 0;
+      left: 0;
+    }
 
 
+    .graphic-design .rectangle {
+      position: absolute;
+      width: 100vw;
+      height: 613px;
+      background-color: #070d12;
+    }
 
-.graphic-design .group-2 {
-  position: absolute;
-  width: 386px;
-  height: 81px;
-  top: 20px;
-  left: 28px;
-}
+    .graphic-design .text-wrapper-4 {
+      position: absolute;
+      width: 1440px;
+      top: 271px;
+      left: 0;
+      font-family: "Cantora One", san-serif;
+      font-weight: 400;
+      font-size: 128px;
+      text-align: center;
+      color: #ffffff;
+      letter-spacing: 0;
+      line-height: normal;
+    }
 
-.graphic-design .img {
-  position: absolute;
-  width: 44px;
-  height: 44px;
-  top: 4px;
-  left: 0;
-}
+    .graphic-design .text-wrapper-5 {
+      position: absolute;
+      width: 313px;
+      top: 638px;
+      left: 20px;
+      font-family: "Cantora One-Regular", Helvetica;
+      font-weight: 400;
+      color: #fda959;
+      font-size: 128px;
+      letter-spacing: 0;
+      line-height: normal;
+      white-space: nowrap;
+    }
 
-.graphic-design .overlap-2 {
-  position: absolute;
-  width: 1523px;
-  height: 1708px;
-  top: 790px;
-  left: 0;
-}
+    .graphic-design .star {
+      position: absolute;
+      width: 332px;
+      height: 332px;
+      top: 473px;
+      left: 1108px;
+    }
 
-/*Mockup-t-shirt*/
-.graphic-design .element-removebg-wrapper {
-  position: absolute;
-  width: 1287px;
-  height: 884px;
-  top: 824px;
-  left: 0;
-  background-color: #e59088;
-  border-radius: 0px 500px 500px 0px;
-}
+    .graphic-design .frame-2 {
+      gap: 17px;
+      top: 20px;
+      left: 797px;
+      display: inline-flex;
+      align-items: center;
+      position: absolute;
+    }
 
-.graphic-design .element-removebg {
-  position: absolute;
-  width: 1400px;
-  height: 1300px;
-  top: -169px;
-  left: 0px;
-}
+    .graphic-design .group-2 {
+      position: absolute;
+      width: 386px;
+      height: 81px;
+      top: 20px;
+      left: 28px;
+    }
 
-.graphic-design .ARTS-LOGO {
-  position: absolute;
-  width: 723px;
-  height: 873px;
-  top: 118px;
-  left: 800px;
-  object-fit: cover;
-}
+    .graphic-design .img {
+      position: absolute;
+      width: 44px;
+      height: 44px;
+      top: 4px;
+      left: 0;
+    }
 
-/*text regarding what the design is about*/
-.graphic-design .arts-orientation {
-  position: absolute;
-  width: 812px;
-  top: 0;
-  left: 237px;
-  font-family: "Cantora One", san-serif;
-  font-weight: 400;
-  color: #000000;
-  font-size: 96px;
-  letter-spacing: 0;
-  line-height: normal;
-}
+    .graphic-design .overlap-2 {
+      position: absolute;
+      width: 1523px;
+      height: 1708px;
+      top: 790px;
+      left: 0;
+    }
 
-.graphic-design .p {
-  position: absolute;
-  width: 492px;
-  top: 1124px;
-  left: 237px;
-  font-weight: 400;
-  color: #000000;
-  font-size: 48px;
-  letter-spacing: 0;
-  line-height: normal;
-}
+    /*Mockup-t-shirt*/
+    .graphic-design .element-removebg-wrapper {
+      position: absolute;
+      width: 1287px;
+      height: 884px;
+      top: 824px;
+      left: 0;
+      background-color: #e59088;
+      border-radius: 0px 500px 500px 0px;
+    }
 
-.graphic-design .ARTS-LOGO-2 {
-  position: absolute;
-  width: 886px;
-  height: 1322px;
-  top: 3013px;
-  left: 263px;
-  object-fit: cover;
-}
-  /*postcard section*/
-.graphic-design .overlap-3 {
-  position: absolute;
-  width: 1843px;
-  height: 1301px;
-  top: 4741px;
-  left: -207px;
-}
+    .graphic-design .element-removebg {
+      position: absolute;
+      width: 1400px;
+      height: 1300px;
+      top: -169px;
+      left: 0px;
+    }
 
-.graphic-design .rectangle-2 {
-  position: absolute;
-  width: 1843px;
-  height: 801px;
-  top: 200px;
-  left: 0;
-  background-color: #e59088;
-}
+    .graphic-design .ARTS-LOGO {
+      position: absolute;
+      width: 723px;
+      height: 873px;
+      top: 118px;
+      left: 800px;
+      object-fit: cover;
+    }
 
-.graphic-design .untitled-design {
-  position: absolute;
-  width: 1084px;
-  height: 1301px;
-  top: 0;
-  left: 278px;
-  border-radius: 50px;
-}
+    /*text regarding what the design is about*/
+    .graphic-design .arts-orientation {
+      position: absolute;
+      width: 812px;
+      top: 0;
+      left: 237px;
+      font-family: "Cantora One", san-serif;
+      font-weight: 400;
+      color: #000000;
+      font-size: 96px;
+      letter-spacing: 0;
+      line-height: normal;
+    }
 
-.graphic-design .div-wrapper {
-  position: absolute;
-  width: 889px;
-  height: 286px;
-  top: 4418px;
-  left: 674px;
-  background-color: #004759;
-}
+    .graphic-design .p {
+      position: absolute;
+      width: 492px;
+      top: 1124px;
+      left: 237px;
+      font-weight: 400;
+      color: #000000;
+      font-size: 48px;
+      letter-spacing: 0;
+      line-height: normal;
+    }
 
-.graphic-design .text-wrapper-10 {
-  position: absolute;
-  width: 695px;
-  top: 30px;
-  left: 71px;
-  font-family: "Cantora One", san-serif;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 150px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-}
-    
-/*img at the bottom section*/
-.graphic-design .overlap-4 {
-  position: absolute;
-  width: 1011px;
-  height: 323px;
-  top: 2612px;
-  left: -70px;
-}
+    .graphic-design .ARTS-LOGO-2 {
+      position: absolute;
+      width: 886px;
+      height: 1322px;
+      top: 3013px;
+      left: 263px;
+      object-fit: cover;
+    }
 
-.graphic-design .rectangle-3 {
-  position: absolute;
-  width: 889px;
-  height: 286px;
-  top: 0;
-  left: 0;
-  background-color: #004759;
-}
+    /*postcard section*/
+    .graphic-design .overlap-3 {
+      position: absolute;
+      width: 1843px;
+      height: 1301px;
+      top: 4741px;
+      left: -207px;
+    }
+
+    .graphic-design .rectangle-2 {
+      position: absolute;
+      width: 1843px;
+      height: 801px;
+      top: 200px;
+      left: 0;
+      background-color: #e59088;
+    }
+
+    .graphic-design .untitled-design {
+      position: absolute;
+      width: 1084px;
+      height: 1301px;
+      top: 0;
+      left: 278px;
+      border-radius: 50px;
+    }
+
+    .graphic-design .div-wrapper {
+      position: absolute;
+      width: 889px;
+      height: 286px;
+      top: 4418px;
+      left: 674px;
+      background-color: #004759;
+    }
+
+    .graphic-design .text-wrapper-10 {
+      position: absolute;
+      width: 695px;
+      top: 30px;
+      left: 71px;
+      font-family: "Cantora One", san-serif;
+      font-weight: 400;
+      color: #ffffff;
+      font-size: 150px;
+      text-align: center;
+      letter-spacing: 0;
+      line-height: normal;
+    }
+
+    /*img at the bottom section*/
+    .graphic-design .overlap-4 {
+      position: absolute;
+      width: 1011px;
+      height: 323px;
+      top: 2612px;
+      left: -70px;
+    }
+
+    .graphic-design .rectangle-3 {
+      position: absolute;
+      width: 889px;
+      height: 286px;
+      top: 0;
+      left: 0;
+      background-color: #004759;
+    }
 
     /*landyard section*/
-.graphic-design .text-wrapper-11 {
-  position: absolute;
-  width: 819px;
-  top: 52px;
-  left: 0;
-  font-family: "Cantora One", san-serif;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 150px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-}
+    .graphic-design .text-wrapper-11 {
+      position: absolute;
+      width: 819px;
+      top: 52px;
+      left: 0;
+      font-family: "Cantora One", san-serif;
+      font-weight: 400;
+      color: #ffffff;
+      font-size: 150px;
+      text-align: center;
+      letter-spacing: 0;
+      line-height: normal;
+    }
 
-.graphic-design .star-2 {
-  position: absolute;
-  width: 192px;
-  height: 192px;
-  top: 36px;
-  left: 819px;
-}
+    .graphic-design .star-2 {
+      position: absolute;
+      width: 192px;
+      height: 192px;
+      top: 36px;
+      left: 819px;
+    }
 
 
-.graphic-design .overlap-5 {
-  position: absolute;
-  width: 1315px;
-  height: 933px;
-  top: 6186px;
-  left: 54px;
-}
+    .graphic-design .overlap-5 {
+      position: absolute;
+      width: 1315px;
+      height: 933px;
+      top: 6186px;
+      left: 54px;
+    }
 
-.graphic-design .ARTS-LOGO-for {
-  position: absolute;
-  width: 1315px;
-  height: 767px;
-  top: 166px;
-  left: 0;
-  object-fit: cover;
-}
+    .graphic-design .ARTS-LOGO-for {
+      position: absolute;
+      width: 1315px;
+      height: 767px;
+      top: 166px;
+      left: 0;
+      object-fit: cover;
+    }
 
-.graphic-design .star-3 {
-  position: absolute;
-  width: 332px;
-  height: 332px;
-  top: 0;
-  left: 500px;
-}
+    .graphic-design .star-3 {
+      position: absolute;
+      width: 332px;
+      height: 332px;
+      top: 0;
+      left: 500px;
+    }
 
     /*Footer*/
-.graphic-design .rectangle-4 {
-  position: absolute;
-  width: 1582px;
-  height: 530px;
-  top: 7511px;
-  left: -71px;
-  background-color: #004759;
-}
-
+    .graphic-design .rectangle-4 {
+      position: absolute;
+      width: 1582px;
+      height: 530px;
+      top: 7511px;
+      left: -71px;
+      background-color: #004759;
+    }
   </style>
-     
-<body>
+
+  <body>
     <div class="graphic-design">
       <div class="div">
-        <div class="overlap">      
-          <div class="overlap-group"> 
+          
             <div class="group">
-                <div class="rectangle"></div>
-                <div class="text-wrapper-4">Graphic Design
-                </div>
+              <div class="rectangle"></div>
+              <div class="text-wrapper-4">Graphic Design
+              </div>
             </div>
-            
+
             <div class="text-wrapper-5">01</div>
             <img class="star" src="Star 2.png" alt="large orange star icon">
-          </div>
-          
+
           <div class="overlap-2">
             <div class="element-removebg-wrapper"><img class="element-removebg" src="3-removebg.png" alt="mockup of girl wearing logo as a t-shirt and posing"></div>
-            
+
             <img class="ARTS-LOGO" src="ARTS 2024 LOGO.png" alt="carnival insipired themed logo">
             <p class="arts-orientation">Arts Orientation 24, SWAG Design</p>
           </div>
-          
+
           <p class="p">Designed Logos and merchandise for The Faculty of Arts orientation. Graphics reflects the carnival festive theme this year.
           </p>
-        </div>
-        
+
         <div class="overlap-3">
           <div class="rectangle-2"></div>
           <img class="untitled-design" src="postcard mockup.png" alt="mockup img of themed postcard with someone holding it">
         </div>
-        
+
         <div class="div-wrapper">
           <div class="text-wrapper-10">Postcard</div>
         </div>
-        
+
         <div class="overlap-4">
           <div class="rectangle-3"></div>
           <div class="text-wrapper-11">Lanyard</div>
           <img class="star-2" src="Star 2.png" alt="small orange star icon">
         </div>
-        
+
         <img class="ARTS-LOGO-2" src="ARTS 2024 LOGO - Lanyard.png" alt="mockup drawing of themed lanyard">
-        
+
         <div class="overlap-5">
           <img class="ARTS-LOGO-for" src="ARTS 2024 LOGO - For Video 1.png" alt="image of boar with a ticket that says Arts Carnival">
           <img class="star-3" src="Star 3.png" alt="large orange star icon">
         </div>
-        
+
         <div class="rectangle-4"></div>
       </div>
-      
-          <!--Header-->
-          <div class="header">
-            <div class="name">
-              <img class="star-icon" src="Star 1 (2).png" alt="Star Icon">Tiffany Lu
-            </div>
-            <div class="links">
-              <a href="/">Graphic Design</a>
-              <a href="/">Ilustration</a>
-              <a href="/">Photography</a>
-            </div>
-          </div>
+
+      <!--Header-->
+      <div class="header">
+        <div class="name">
+          <img class="star-icon" src="Star 1 (2).png" alt="Star Icon">Tiffany Lu
+        </div>
+        <div class="links">
+          <a href="/">Graphic Design</a>
+          <a href="/">Ilustration</a>
+          <a href="/">Photography</a>
+        </div>
+      </div>
 
     </div>
   </body>
 </html>
-
